@@ -7,7 +7,7 @@ Enfin, l'internaute peut, s'il le souhaite, sauvegarder son dessin.
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/simple_drawing_app/
 
 ## Développez avec
 
