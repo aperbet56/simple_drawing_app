@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mon application de dessin</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/pinceau.png" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Mon application de dessin</h1>
+    </header>
+    <main class="container">
+      <section class="tools__board">
+        <div class="row">
+          <h2 class="title">Formes</h2>
+          <ul class="options">
+            <li class="option tool" id="rectangle">
+              <img src="img/rect.svg" alt="rectangle" />
+              <span>Rectangle</span>
+            </li>
+            <li class="option tool" id="circle">
+              <img src="img/circle.svg" alt="cercle" />
+              <span>Cercle</span>
+            </li>
+            <li class="option tool" id="triangle">
+              <img src="img/triangle.svg" alt="triangle" />
+              <span>Triangle</span>
+            </li>
+            <li class="option tool" id="line">
+              <img src="img/line.svg" alt="ligne" />
+              <span>Ligne</span>
+            </li>
+            <li class="option">
+              <input type="checkbox" id="fill__color" />
+              <label for="fill__color">Remplissage</label>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <h2 class="title">Options</h2>
+          <ul class="options">
+            <li class="option active tool" id="brush">
+              <img src="img/brush.svg" alt="pinceau" />
+              <span>Pinceau</span>
+            </li>
+            <li class="option tool" id="eraser">
+              <img src="img/eraser.svg" alt="gomme" />
+              <span>Gomme</span>
+            </li>
+            <li class="option">
+              <input
+                type="range"
+                id="size__slider"
+                min="1"
+                max="30"
+                value="5"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="row colors">
+          <h2 class="title">Couleurs</h2>
+          <ul class="options">
+            <li class="option selected"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option"></li>
+            <li class="option">
+              <input
+                type="color"
+                name="color__picker"
+                id="color__picker"
+                value="#4a98f7"
+              />
+            </li>
+          </ul>
+        </div>
+        <div class="row buttons">
+          <button class="clear__canvas">Effacer la toile</button>
+          <button class="save__img">Sauvegarder la toile</button>
+        </div>
+      </section>
+      <section class="drawing__board">
+        <canvas></canvas>
+      </section>
+    </main>
+    <footer>
+      <span>Site créé par aperbet56</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
