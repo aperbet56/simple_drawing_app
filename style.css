@@ -7,6 +7,7 @@
     border: none;
     outline: none;
     list-style-type: none;
+    text-decoration: none;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -26,7 +27,7 @@ header, footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 15px;
+    padding: 12px 15px;
     color: #ffffff;
 }
 
@@ -39,6 +40,7 @@ h1 {
     text-transform: capitalize;
     font-size: 32px;
     border: 2px solid #ffffff;
+    border-radius: 3px;
     padding: 6px;
 }
 
@@ -185,7 +187,7 @@ img {
     background-color: #ffffff;
     color: #6c757d;
     border: 1px solid #6c757d;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .clear__canvas:hover {
@@ -196,6 +198,7 @@ img {
 .buttons .save__img {
     background-color: #4a98f7;
     border: 1px solid #4a98f7;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .buttons .save__img:hover {
@@ -214,4 +217,13 @@ img {
 
 footer span {
     font-size: 20px;
+}
+
+footer span a {
+    color: #ffffff;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+footer span a:hover {
+    border-bottom: 2px solid #ffffff;
 }
